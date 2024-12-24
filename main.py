@@ -1,16 +1,40 @@
-# This is a sample Python script.
+import socket
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from Http11Request import Http11Request
+from Http2Response import Http2Response
+
+HOST = "localhost"
+PORT = 8080
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def main():
+    server_socket = socket.socket()
+    server_socket.bind((HOST, PORT))
+    server_socket.listen(1)
+
+    try:
+        while True:
+            conn, addr = server_socket.accept()
+            print(f"Connection from {addr}")
+
+            request_text = conn.recv(1024).decode("utf-8")
+            print(request_text)
+            request = Http11Request(request_text)
+
+            response = (Http2Response()
+                        .set_content(request.list_parts())
+                        .set_status_code(200)
+                        .build_response())
+            conn.sendall(response.encode("utf-8"))
+
+            conn.close()
+    except Exception as e:
+        print(e)
+    finally:
+        server_socket.close()
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
