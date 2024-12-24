@@ -1,7 +1,7 @@
 import string
 
 
-class Http11Request:
+class Http1_1Request:
     method = ""
     uri = ""
     headers = {}
@@ -11,7 +11,7 @@ class Http11Request:
         request_text = request_text.splitlines()
         request_line = request_text[0].split(" ")
         self.method = request_line[0]
-        self.uri = request_line[1]
+        self.uri = request_line[1][1:]
         if request_line[2] != "HTTP/1.1":
             raise ValueError(f"HTTP version was not 1.1: '{request_line[2]}'")
 

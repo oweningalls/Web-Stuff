@@ -17,3 +17,5 @@ HTTP/2 {self.status_code}
         self.status_code = code
         return self
 
+    def send_response(self, conn):
+        conn.sendall(self.build_response().encode("utf-8"))

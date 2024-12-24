@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0510d777-acb8-4f76-965e-b6b8e0592130" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/Http11Request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http2Response.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/StatusCode.py" afterDir="false" />
+    <list default="true" id="0510d777-acb8-4f76-965e-b6b8e0592130" name="Changes" comment="parse the request and structure the response">
+      <change afterPath="$PROJECT_DIR$/Router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ServeStatusCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http11Request.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http11Request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http2Response.py" beforeDir="false" afterPath="$PROJECT_DIR$/Http2Response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StatusCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/StatusCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Python.main.executor": "Run",
+    "Python.main.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
@@ -91,20 +93,29 @@
       <option name="project" value="LOCAL" />
       <updated>1734911999944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="parse the request and structure the response">
+      <option name="closed" value="true" />
+      <created>1735000827455</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735000827455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="parse the request and structure the response" />
+    <option name="LAST_COMMIT_MESSAGE" value="parse the request and structure the response" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Http11Request.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
