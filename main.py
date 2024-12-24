@@ -1,5 +1,6 @@
 import socket
 
+from HelloWorld import HelloWorld
 from Http1_1Request import Http1_1Request
 from Http2Response import Http2Response
 from Router import Router
@@ -17,6 +18,7 @@ def main():
 
     router = Router()
     router.add_route("status_code/.*", ServeStatusCode.get_code_and_content)
+    router.add_route("hello_world", HelloWorld.get_code_and_content)
 
     conn = None
     while True:
