@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0510d777-acb8-4f76-965e-b6b8e0592130" name="Changes" comment="add routing">
-      <change afterPath="$PROJECT_DIR$/HelloWorld.py" afterDir="false" />
+    <list default="true" id="0510d777-acb8-4f76-965e-b6b8e0592130" name="Changes" comment="add hello world page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloWorld.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/HelloWorld.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServeStatusCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ServeStatusCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,13 +106,22 @@
       <option name="project" value="LOCAL" />
       <updated>1735020421136</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add hello world page">
+      <option name="closed" value="true" />
+      <created>1735021200393</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735021200393</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="parse the request and structure the response" />
     <MESSAGE value="add routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="add routing" />
+    <MESSAGE value="add hello world page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hello world page" />
   </component>
 </project>

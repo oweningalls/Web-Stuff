@@ -1,11 +1,11 @@
 import socket
 
-from HelloWorld import HelloWorld
-from Http1_1Request import Http1_1Request
-from Http2Response import Http2Response
-from Router import Router
-from ServeStatusCode import ServeStatusCode
-from StatusCode import StatusCode
+from pages.hello_world import HelloWorld
+from http1_1request import Http1_1Request
+from http2response import Http2Response
+from router import Router
+from pages.serve_status_code import ServeStatusCode
+from status_code import StatusCode
 
 HOST = "localhost"
 PORT = 8080
