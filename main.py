@@ -1,5 +1,6 @@
 import socket
 
+from pages.directory import Directory
 from pages.hello_world import HelloWorld
 from http1_1request import Http1_1Request
 from http2response import Http2Response
@@ -17,8 +18,12 @@ def main():
     server_socket.listen(1)
 
     router = Router()
-    router.add_route("status_code/.*", ServeStatusCode.get_code_and_content)
+    router.add_route("status_code/.+", ServeStatusCode.get_code_and_content)
     router.add_route("hello_world", HelloWorld.get_code_and_content)
+    directory = Directory()
+    directory.add_item("Hello World page", "hello_world")
+    directory.add_item("OK page", "status_code/200")
+    router.add_route("", lambda _: directory.get_code_and_content())
 
     conn = None
     while True:

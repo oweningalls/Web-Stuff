@@ -9,4 +9,4 @@ class ServeStatusCode:
         except:
             code = StatusCode.NOT_FOUND
 
-        return code.value, code.name
+        return code, code.name

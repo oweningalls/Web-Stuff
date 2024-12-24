@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0510d777-acb8-4f76-965e-b6b8e0592130" name="Changes" comment="add hello world page">
+    <list default="true" id="0510d777-acb8-4f76-965e-b6b8e0592130" name="Changes" comment="rename and move files">
+      <change afterPath="$PROJECT_DIR$/pages/directory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HelloWorld.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/HelloWorld.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServeStatusCode.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ServeStatusCode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/serve_status_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/serve_status_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/router.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2qas3z7lDm9rrJdA3Oez7MVDvIB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +45,11 @@
     "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Owen\PycharmProjects\webStuff\pages" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="webStuff" />
@@ -114,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735021200393</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rename and move files">
+      <option name="closed" value="true" />
+      <created>1735066197793</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735066197793</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -122,6 +138,7 @@
     <MESSAGE value="parse the request and structure the response" />
     <MESSAGE value="add routing" />
     <MESSAGE value="add hello world page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hello world page" />
+    <MESSAGE value="rename and move files" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename and move files" />
   </component>
 </project>

@@ -18,5 +18,5 @@ class Router:
 
     @staticmethod
     def route_matches(uri, pattern):
-        return re.search(pattern, uri) is not None
+        return re.search(f"^{pattern}$", uri) is not None
 
